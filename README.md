@@ -16,12 +16,12 @@ SERPAPI_API_KEY="YOUR_API_KEY"
 ## Using it in Frontend (Optional)
 This is an additional guide, on how to access the endpoint from frontend (HTML).
 
-**Prerequisite**
+**Prerequisite**  
 Run a local server for your HTML file. Options:
 - Using VSCode Text Editor: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 - Using Python SimpleHTTPServer: https://www.digitalocean.com/community/tutorials/python-simplehttpserver-http-server
 
-**Tutorial**
+**Tutorial**  
 
 You can find a simple `index.html` file example in this repository, that fetch a request from the server above. 
 
