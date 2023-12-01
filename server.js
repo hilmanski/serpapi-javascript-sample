@@ -3,6 +3,13 @@ const { getJson } = require("serpapi");
 require('dotenv').config();
 
 const server = http.createServer((req, res) => {
+
+    // Set CORS headers
+    const allowed_domain = 'http://127.0.0.1:5500' // Adjust with your domain or localhost port
+    res.setHeader('Access-Control-Allow-Origin', allowed_domain);
+    res.setHeader('Access-Control-Allow-Methods', 'GET');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
     if (req.url === '/test' && req.method === 'GET') {
         
         return getJson({
